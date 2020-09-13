@@ -4,30 +4,39 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>app.creation</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <a href="#"><img src="Ellipse.png" alt="logo">app.creation</a>
-    <nav>
-      <a href="#">start</a>
-      <a href="#">services</a>
-      <a href="#">about</a>
-      <a href="#">blog</a>
-      <a href="#">contact us</a>
+<div class="container">
+  <header class="header">
+    <div class="logo"><img src="Ellipse.svg" alt="logo" class="logo-img1">
+      <img src="Ellipse-1.svg" alt="logo" class="logo-img2">app.creation</div>
+    <nav class="menu">
+      <a href="#" class="menu__item">start</a>
+      <a href="#" class="menu__item menu__item_active">services</a>
+      <a href="#" class="menu__item">about</a>
+      <a href="#" class="menu__item">blog</a>
+      <a href="#" class="menu__item">contact us</a>
     </nav>
   </header>
-  <section>
-    <div>
-      <h1>Building an App Without Design Expertise?</h1>
-      <p>I help tech startups design better digital products without hiring a full-time designer</p>
-      <button>Schedule free consultation</button>
-    </div>
-    <img src="" alt="">
-    <div>
-      <img src="Ellipse (3).png" alt="ellipse_1">
-      <img src="Ellipse (3).png" alt="ellipse_2">
-      <img src="Ellipse (3).png" alt="ellipse_3">
+  <section class="main-section">
+    <article class="main-article">
+      <div class="main-content">
+        <h1 class="main-content__headline">Building an App<br> <span>Without Design<br>Expertise</span> </h1>
+        <p class="main-content__discription">I help tech startups design better digital <br> products without hiring a full-time designer</p>
+        <button class="main-content__btn">Schedule free consultation</button>
+      </div>
+      <div class="image-content">
+        <img src="Vector.png" alt="image-content" class="image-content__img">
+      </div>
+    </article>
+    <div class="main-bottom">
+      <img src="Ellipse.png" alt="ellipse1" class="main-bottom__item">
+      <img src="Ellipse.png" alt="ellipse2" class="main-bottom__item">
+      <img src="Ellipse.png" alt="ellipse3" class="main-bottom__item">
     </div>
   </section>
+</div>
 </body>
 </html>
