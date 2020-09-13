@@ -30,8 +30,8 @@ body{
   font-family: "Roboto";
 }
 
-.menu__item:hover{
-  border: solid 2px black;
+.menu__item_active:hover{
+  border-bottom: solid 2px #0056EC;;
 }
 
 .menu__item:nth-child(5){
