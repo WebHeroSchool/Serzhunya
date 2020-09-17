@@ -8,9 +8,9 @@ body{
 }
 
 .container{
-  width:80%;
+  width:90%;
   margin:auto;
-  padding: 40px 0;
+  padding: 40px 0 38px 0;
 }
 
 .header{
@@ -20,7 +20,7 @@ body{
 }
 
 .menu__item{
-  font: 500 14px/26px "Roboto", arial, helvetica, sans-serif;
+  font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
   text-decoration: none; 
   margin-right: 24px;
   font-style: normal;
