@@ -87,7 +87,7 @@ body{
 }
 
 .main{
-  padding-right: 53%;
+  padding-right: 50%;
   background: no-repeat top right url(img/main.svg);
   padding-bottom: 277px;
 }
@@ -143,42 +143,37 @@ body{
     background: url(img/gamburger.svg) no-repeat right top;
     margin-top:8px;
   }
-
   .menu__item{
   visibility: hidden;
   }
-
   .header{
     margin-bottom: 28px;
   }
-
   .container{
     width: 90%;
     padding: 24px 0 43px 0;
   }
-
   .main-bottom{
     display: none;
   }
-
   .main__headline{
-    font: bold 30px/40px "PT Serif",arial, helvetica, sans-serif ;
+    font-size:30px;
+    line-height:40px;
     text-align: center;
     margin-bottom: 44px;
   }
-
   .main__discription{
-    font: 500 16px/19px "Roboto", arial, helvetica, sans-serif;
+    font-size:16px;
+    line-height:19px;
     text-align: center;
     margin-bottom: 25px;
   }
-
   .main__btn{
-    font: 500 14px/16px "Roboto", arial, helvetica, sans-serif;
+    font-size:14px;
+    line-height:16px;
     text-align:center;
     margin-bottom: 0;
   }
-
   .main{
     padding-right: 0%;
     padding-top:70%;
@@ -187,9 +182,40 @@ body{
     padding-bottom: 0;
     background-position: top center;
   }
-
   .logo{
     font-size:0px;
   }
+}
 
+@media(max-width:1366px){
+.header{
+  margin-bottom: 140px;
+  }
+.menu__item{
+  font-size:14px;
+  line-height:16px;
+  }
+
+.main__headline{
+  font-size:50px;
+  line-height:66px;
+  }
+.main__discription{
+  font-size:18px;
+  line-height:21px;
+  }
+.main__btn{
+  font-size:14px;
+  line-height:16px;
+  margin-bottom:147px;
+  }
+.container{
+  width:70%;
+  }
+}
+
+@media(max-width:1170px){
+  .container{
+    width:85%;
+    }
 }
