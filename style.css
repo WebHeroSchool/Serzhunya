@@ -174,9 +174,6 @@ body{
 }
 
 @media(max-width:768px){
-}
-
-@media(max-width:768px){
   .menu{
     background: url(img/gamburger.svg) no-repeat right top;
     margin-top:8px;
