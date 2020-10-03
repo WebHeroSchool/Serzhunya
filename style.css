@@ -14,6 +14,10 @@ body{
   display: flex;
   justify-content: space-between;
   margin-bottom: 246px ;
+  
+}
+.menu{
+  animation: menu_move 1s linear ;
 }
 .menu__item{
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
@@ -22,6 +26,8 @@ body{
   font-style: normal;
   color: #000;
   position: relative;
+  transition: 1s margin-right;
+  
 }
 .menu__item:hover{
   opacity: .5;
@@ -51,6 +57,8 @@ body{
   font: bold 24px/32px "PT Serif", arial, helvetica, sans-serif;
   position: relative;
   padding-left: 44px;
+  cursor: pointer; 
+  
 }
 .logo__circle{
   opacity: .7;
@@ -60,6 +68,7 @@ body{
   position: absolute;
   top:0;
   left:0;
+  animation: logo_move 1s linear 0s alternate 1;
 }
 .logo:hover{
     opacity:.5 ;
@@ -72,16 +81,51 @@ body{
   top:7px;
   left:8px;
 }
+@keyframes logo_move{
+  0%{
+    transform:translateY(-100px);
+  }
+  50%{
+    transform:translateY(50px);
+    width: 45px;
+    height: 45px;
+  }
+
+  100%{
+    transform:translateY(0);
+  }
+}
+
+@keyframes menu_move{
+  0%{
+    transform:translateX(50px);
+    opacity: 0.05;
+   
+    
+  }
+  50%{
+    transform:translateX(-20px);
+    opacity: 0.5;
+  }
+  100%{
+    transform:translateX(0);
+    
+  }
+}
+
 .main{
   padding-right: 50%;
   background: no-repeat top right url(img/main.svg);
   padding-bottom: 277px;
+  
 }
 .main__headline{
   font: bold 66px/87px "PT Serif",arial, helvetica, sans-serif ;
   font-style: normal;
   color: #000;
   margin-bottom: 40px;
+  transition:0.5s;
+  
 }
 .main__headline span{
   background-color:#ECF3FF;
@@ -94,7 +138,6 @@ body{
 }
 .main__btn{
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
-  background: #0056EC;
   border-radius: 4px;
   font-style: normal;
   color: #FFF;
@@ -102,10 +145,26 @@ body{
   margin-bottom:269px;
   padding: 18px 21px;
   text-decoration: none;
-  transition: opacity .5s;
+  background:linear-gradient(45deg,#0056EC,#98ddf7,#0056EC);
+  transition: padding 0.5s;
+  background-size: 500%;
+  animation: btn_gradient 3s linear 5 normal;
 }
+@keyframes btn_gradient{
+  0%{
+  background-position: 0 100%;
+  }
+  50%{
+  background-position: 100% 100%;
+  }
+  100%{
+  background-position: 0 100%;
+  }
+}
+
 .main__btn:hover{
-  opacity: .5;
+  padding: 18px 21px 18px 30px; 
+  animation-play-state: paused;
 }
 .main-bottom{
   display: flex;
@@ -177,6 +236,7 @@ body{
   .menu{
     background: url(img/gamburger.svg) no-repeat right top;
     margin-top:8px;
+    
   }
   .menu__item{
   visibility: hidden;
