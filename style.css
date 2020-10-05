@@ -13,16 +13,18 @@ body{
 .header{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 246px ;
+  margin-bottom: 173px ;
   
 }
 .menu{
   animation: menu_move 1s linear ;
+  margin-top: 11px;
+  margin-right: 2px;
 }
 .menu__item{
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
   text-decoration: none; 
-  margin-right: 24px;
+  margin-right: 22px;
   font-style: normal;
   color: #000;
   position: relative;
@@ -57,8 +59,6 @@ body{
   font: bold 24px/32px "PT Serif", arial, helvetica, sans-serif;
   position: relative;
   padding-left: 44px;
-  cursor: pointer; 
-  
 }
 .logo__circle{
   opacity: .7;
@@ -90,7 +90,6 @@ body{
     width: 45px;
     height: 45px;
   }
-
   100%{
     transform:translateY(0);
   }
@@ -100,8 +99,6 @@ body{
   0%{
     transform:translateX(50px);
     opacity: 0.05;
-   
-    
   }
   50%{
     transform:translateX(-20px);
@@ -109,14 +106,12 @@ body{
   }
   100%{
     transform:translateX(0);
-    
   }
 }
-
 .main{
-  padding-right: 50%;
+  padding-right: 55%;
   background: no-repeat top right url(img/main.svg);
-  padding-bottom: 277px;
+  padding-bottom: 147px;
   
 }
 .main__headline{
@@ -125,7 +120,7 @@ body{
   color: #000;
   margin-bottom: 40px;
   transition:0.5s;
-  
+  margin-top: 73px;
 }
 .main__headline span{
   background-color:#ECF3FF;
@@ -134,7 +129,7 @@ body{
   font: 500 22px/26px "Roboto", arial, helvetica, sans-serif;
   font-style: normal;
   color: #000;
-  margin-bottom: 41px;
+  margin-bottom: 52px;
 }
 .main__btn{
   font: 500 18px/21px "Roboto", arial, helvetica, sans-serif;
@@ -161,7 +156,6 @@ body{
   background-position: 0 100%;
   }
 }
-
 .main__btn:hover{
   padding: 18px 21px 18px 30px; 
   animation-play-state: paused;
@@ -169,19 +163,39 @@ body{
 .main-bottom{
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .main-bottom__item{
   width: 8px;
   height: 8px;
-  margin-right: 4px;
+  border-radius: 50%;
+  background: #C8DBFB;
+  position: absolute;
+  opacity: 0.7;
+}
+.main-bottom__item1{
+  top: 13px;
+  
+  left:48.5%;
+}
+.main-bottom__item2{
+  top: 13px;
+  left:50%;
+}
+.main-bottom__item3{
+  top: 13px;
+  left:51.5%;
 }
 
 @media(max-width:1366px){
   .main{
     padding-right: 55%;
   }
+  .main__headline{
+    padding-top: 17px;
+  }
   .header{
-    margin-bottom: 140px;
+    margin-bottom: 123px;
     }
   .menu__item{
     font-size:14px;
@@ -194,6 +208,7 @@ body{
   .main__discription{
     font-size:18px;
     line-height:21px;
+    font-weight: 500;
     }
   .main__btn{
     font-size:14px;
@@ -202,16 +217,16 @@ body{
     padding:14px 16px;
     }
   .container{
-    width:75%;
+    width:73.5%;
     }
   }
   
 @media(max-width:1170px){
   .main{
-    padding-right: 60%;
+    padding-right:40%;
   }
   .container{
-    width:90%;
+    width:85%;
   }
   .menu__item{
     font-size:14px;
@@ -220,6 +235,7 @@ body{
   .main__headline{
     font-size:50px;
     line-height:66px;
+    margin-bottom: 37px;
   }
   .main__discription{
     font-size:18px;
@@ -236,7 +252,6 @@ body{
   .menu{
     background: url(img/gamburger.svg) no-repeat right top;
     margin-top:8px;
-    
   }
   .menu__item{
   visibility: hidden;
@@ -271,8 +286,8 @@ body{
   }
   .main{
     padding-right: 0%;
-    padding-top:70%;
-    background-size:70%;
+    padding-top:45%;
+    background-size:65%;
     text-align:center;
     padding-bottom: 0;
     background-position: top center;
